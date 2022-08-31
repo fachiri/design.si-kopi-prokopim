@@ -1,0 +1,175 @@
+:root {
+    --primary: rgb(255, 213, 2);
+    --secondary: rgb(72, 161, 77);
+    --light: rgb(240, 240, 240);
+    --dark: #212529;
+  }
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: var(--light);
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav .brand {
+    font-weight: 700;
+}
+
+nav .pages {
+    list-style-type: none;
+}
+nav .pages li {
+    padding: 0 .8rem;
+}
+
+nav .nav-item:hover {
+    color: var(--primary);
+}
+
+nav .action .loginBtn {
+    background-color: var(--primary);
+}
+
+.slideshow .carousel-item img {
+    height: calc(100vh - 74px);
+}
+
+.dataAngka .card {
+    width: 15rem;
+    border: none;
+    background-color: none;
+    border: 1px solid var(--secondary);
+    overflow: hidden;
+}
+
+.dataAngka .card .icon {
+    background-color: var(--secondary);
+    width: 5rem;
+    height: 5rem;
+}
+
+.dataAngka .card .icon i {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.dataAngka .cardBody .amount {
+    font-size: 2rem;
+    margin-bottom: -8px;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+.cardProfile {
+    background-color: var(--primary);
+    margin-top: 120px;
+}
+
+.cardProfile .card{
+    width: 15rem;
+}
+
+.cardProfile img{
+    width: 10rem;
+}
+
+.news {
+    margin-top: 120px;
+}
+
+.news .latestNews img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.news .latestNews .latestNewsCard {
+    background-color: #fff;
+    border-radius: 1rem;
+    margin-top: -100px;
+    position: absolute;
+    width: 90%;
+}
+
+.news .latestNews .latestNewsCard h4 {
+    font-weight: 700;
+}
+
+.news .latestNews .latestNewsCard small {
+    font-weight: 500;
+    opacity: .8;
+}
+
+.news .rightSideNews img {
+    width: 40%;
+    border-radius: 1rem;
+}
+
+.news .rightSideNews h5 {
+    font-weight: 600;
+}
+
+.news .rightSideNews small {
+    font-weight: 500;
+    opacity: .8;
+}
+
+.news .allNewsBtn {
+    background-color: var(--primary);
+}
+
+.about {
+    margin-top: 120px;
+}
+
+.about img {
+    border-radius: 1rem;
+    height: 20rem;
+}
+
+.about .aboutBtn {
+    background-color: var(--primary);
+}
+
+.footer {
+    margin-top: 120px;
+    background-color: var(--primary);
+}
+
+.footer .logo {
+    border-radius: 1rem;
+}
+
+.footer .logo img {
+    height: 3rem;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: .5rem;
+}
+
+.footer i {
+    width: 1rem;
+    margin-right: .5rem;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    opacity: .7;
+}
+
+.footer a:hover {
+    opacity: 1;
+}

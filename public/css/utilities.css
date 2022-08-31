@@ -1,0 +1,23 @@
+.text-secondary {
+    color: var(--secondary) !important;
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+a.link {
+    text-decoration: none;
+    color: #212529 !important;
+}
+
+a.link-primary:hover {
+    color: var(--primary) !important;
+}
+
+.bg-main {
+    background-color: var(--primary);
+}
+
+
+
