@@ -1,5 +1,6 @@
 :root {
     --primary: rgb(255, 213, 2);
+    --dark-primary: rgb(218, 185, 22);
     --secondary: rgb(72, 161, 77);
     --light: rgb(240, 240, 240);
     --dark: #212529;
@@ -105,13 +106,26 @@ nav .action .loginBtn {
     opacity: .8;
 }
 
+.news .rightSideNews {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
 .news .rightSideNews img {
     width: 40%;
-    border-radius: 1rem;
+}
+
+.news .rightSideNews .link:hover{
+    outline: 6px solid var(--secondary);
+    transition: .2s;
 }
 
 .news .rightSideNews h5 {
     font-weight: 600;
+}
+
+.news .rightSideNews .dateTag{
+    font-size: .9rem;
 }
 
 .news .rightSideNews small {
@@ -172,4 +186,101 @@ nav .action .loginBtn {
 
 .footer a:hover {
     opacity: 1;
+}
+
+.header {
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.header .overlay {
+    background-color: rgba(0, 0, 0, .25);
+}
+
+.header .headerTitle {
+    margin-top: 8rem;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header .headerTitle h4{
+    margin: 0;
+}
+
+.news .mainSideNews img {
+    width: 100%;
+    height: 15rem;
+    border-radius: 1rem;
+}
+
+.news .mainSideNews .mainNewsCard {
+    border-radius: 1rem;
+    margin-top: -100px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+.news .mainSideNews .mainNewsCard h5{
+    margin: 0;
+}
+
+.news .link:hover .mainNewsCard, .news .link:hover .latestNewsCard{
+    margin-top: -105px;
+    transition: .1s;
+    transition-timing-function: ease-in-out;
+    background-color: rgb(250, 250, 250);
+}
+
+.allNews .cardNews {
+    width: 16rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.allNews .cardNews:hover {
+    margin-top: -.3rem;
+    transition: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+.allNews .cardNews .cardNewsImg {
+    width: 100%;
+    height: 7rem;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.allNews .cardNews .cardNewsImg img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.allNews .cardNews .cardNewsTitle {
+    font-weight: 600;
+}
+
+.allNews .cardNews .cardNewsInfo {
+    font-size: .8rem;
+}
+
+.allNews .cardNews .cardNewsInfo span i{
+    font-size: .7rem;
+}
+
+.allNews .cardNews .cardNewsShareBtn {
+    margin-top: -1.5rem;
+    right: 1.2rem;
+    background-color: var(--primary);
+}
+
+.allNews .pagination .page-item .page-link{
+    color: var(--dark-primary);
 }

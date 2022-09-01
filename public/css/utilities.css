@@ -6,6 +6,10 @@
     color: var(--primary) !important;
 }
 
+.text-dark-primary {
+    color: var(--dark-primary) !important;
+}
+
 a.link {
     text-decoration: none;
     color: #212529 !important;

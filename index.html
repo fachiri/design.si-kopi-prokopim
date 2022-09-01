@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <nav class="shadow-lg bg-white">
+    <nav class="shadow-sm bg-white">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center p-3">
                 <div class="brand">
@@ -27,9 +27,10 @@
                 </div>
                 <div class="d-flex align-items-center">
                     <ul class="pages d-flex ps-0 m-0">
-                        <li class="nav-item"><a href="#" class="nav-link">News</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Calendar</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
+                        <li class="nav-item"><a href="agenda.html" class="nav-link">Calendar</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     </ul>
                     <div class="action ms-2">
                         <a href="#" class="btn text-reset rounded-pill px-3 py-2 loginBtn shadow-">Login</a>
@@ -200,6 +201,7 @@
             <div class="row">
                 <div class="col-6 latestNews position-relative">
                     <img src="public/uploads/slide1.jpg" alt="News">
+                    <a href="#" class="link">
                     <div class="p-4 shadow-sm latestNewsCard">
                         <div class="mb-2">
                             <span class="me-3">
@@ -215,18 +217,18 @@
                                 <small>Sosialisasi</small>
                             </span>
                         </div>
-                        <a href="#" class="link link-primary">
                             <h4 class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, rerum!</h4>
-                        </a>
-                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, perspiciatis sint non inventore consequatur molestias. Magnam voluptatum id eveniet beatae...</span>
-                    </div>
+                            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, perspiciatis sint non inventore consequatur molestias. Magnam voluptatum id eveniet beatae...</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-6">
                     <div class="d-flex flex-column">
-                        <div class="rightSideNews d-flex mb-4">
+                        <div class="rightSideNews shadow-sm d-flex mb-4">
                             <img src="public/uploads/slide2.jpg" alt="News">
+                            <a href="#" class="link bg-white py-3">
                             <div class="ms-3">
-                                <div class="mb-2">
+                                <div class="dateTag mb-2">
                                     <span class="me-3">
                                         <i class="fa-solid fa-calendar me-2 text-secondary"></i>
                                         <small>01 Juni 2022</small>
@@ -236,16 +238,16 @@
                                         <small>Sosialisasi</small>
                                     </span>
                                 </div>
-                                <a href="#" class="link link-primary">
                                     <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                                </a>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, perspiciatis sint non inventore consequatur molestias...</span>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, perspiciatis sint non inventore...</span>
                             </div>
+                            </a>
                         </div>
-                        <div class="rightSideNews d-flex mb-4">
+                        <div class="rightSideNews shadow-sm d-flex mb-4">
                             <img src="public/uploads/slide3.jpg" alt="News">
+                            <a href="#" class="link bg-white py-3">
                             <div class="ms-3">
-                                <div class="mb-2">
+                                <div class="dateTag mb-2">
                                     <span class="me-3">
                                         <i class="fa-solid fa-calendar me-2 text-secondary"></i>
                                         <small>01 Juni 2022</small>
@@ -255,16 +257,16 @@
                                         <small>Sosialisasi</small>
                                     </span>
                                 </div>
-                                <a href="#" class="link link-primary">
                                     <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                                </a>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, perspiciatis sint non inventore consequatur molestias...</span>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, perspiciatis sint non inventore...</span>
                             </div>
+                            </a>
                         </div>
-                        <div class="rightSideNews d-flex mb-4">
+                        <div class="rightSideNews shadow-sm d-flex mb-4">
                             <img src="public/uploads/slide2.jpg" alt="News">
+                            <a href="#" class="link bg-white py-3">
                             <div class="ms-3">
-                                <div class="mb-2">
+                                <div class="dateTag mb-2">
                                     <span class="me-3">
                                         <i class="fa-solid fa-calendar me-2 text-secondary"></i>
                                         <small>01 Juni 2022</small>
@@ -274,14 +276,13 @@
                                         <small>Sosialisasi</small>
                                     </span>
                                 </div>
-                                <a href="#" class="link link-primary">
                                     <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                                </a>
-                                <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, perspiciatis sint non inventore consequatur molestias...</span>
+                                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, perspiciatis sint non inventore...</span>
                             </div>
+                            </a>
                         </div>
                         <div class="text-center">
-                            <a href="#" class="btn text-reset rounded-pill px-3 py-2 allNewsBtn">Selengkapnya <i class="fa-solid fa-angle-right ms-1"></i></a>
+                            <a href="news.html" class="btn text-reset rounded-pill px-3 py-2 allNewsBtn shadow-sm">Selengkapnya <i class="fa-solid fa-angle-right ms-1"></i></a>
                         </div>
                     </div>
                 </div>
@@ -374,7 +375,6 @@
             </div>
         </div>
     </footer>
-
 
     <script src="public/js/bootstrap.bundle.min.js"></script>
 </body>
