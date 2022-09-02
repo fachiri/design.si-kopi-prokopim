@@ -336,3 +336,31 @@ nav .action .loginBtn {
 .agenda .agendaTable .time{
     font-weight: 500;
 }
+
+.agendaTable .agendaTableBody .agendaPurple {
+    background-color: rgba(70, 100, 255, .2);
+    box-shadow: inset 0 0 0 3px #fff;
+    color: rgb(70, 100, 255);
+}
+
+.agendaTable .agendaTableBody .agendaBlue {
+    background-color: rgba(62, 184, 254, .2);
+    box-shadow: inset 0 0 0 3px #fff;
+    color: rgb(62, 184, 254);
+}
+
+.agendaTable .agendaTableBody .agendaOrange {
+    background-color: rgba(253, 143, 41, .2);
+    box-shadow: inset 0 0 0 3px #fff;
+    color: rgb(253, 143, 41);
+}
+
+.agendaTable .agendaTableBody .agendaRed {
+    background-color: rgba(254, 84, 84, .2);
+    box-shadow: inset 0 0 0 3px #fff;
+    color: rgb(254, 84, 84);
+}
+
+.aboutPage .aboutCard {
+    border-radius: 1rem;
+}
