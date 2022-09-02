@@ -284,3 +284,55 @@ nav .action .loginBtn {
 .allNews .pagination .page-item .page-link{
     color: var(--dark-primary);
 }
+
+.agenda .agendaCard {
+    border-radius: 1rem;
+}
+
+.agenda .agendaTable {
+    width: 100%;
+}
+
+.agenda .agendaTable tr:first-child td:nth-child(n+2) {
+    width: 13.3%;
+}
+
+.agenda .agendaTable tr td{
+    border: 1px solid #dfdfdf;
+}
+
+.agenda .agendaTable .date {
+    margin: 0;
+    font-weight: 700;
+}
+
+.agenda .agendaTable .calendarIcon {
+    background-color: #ececec;
+    color: var(--secondary);
+    box-shadow: inset 0 0 0 3px #fff;
+
+}
+
+.agenda .agendaTable .active {
+    box-shadow: inset 0px -4px 0px var(--secondary);
+    box-sizing: border-box;
+}
+
+.agenda .agendaBtn span{
+    background-color: var(--primary);
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.agenda .agendaTable .agendaTableBody tr td{
+    padding: .5rem;
+}
+
+.agenda .agendaTable .agendaTableBody tr td:first-child{
+    color: #949494;
+    text-align: center;
+}
+
+.agenda .agendaTable .time{
+    font-weight: 500;
+}

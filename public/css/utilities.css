@@ -19,6 +19,11 @@ a.link-primary:hover {
     color: var(--primary) !important;
 }
 
+span.link-primary-dark:hover {
+    background-color: var(--dark-primary);
+    cursor: pointer;
+}
+
 .bg-main {
     background-color: var(--primary);
 }
