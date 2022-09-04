@@ -16,25 +16,28 @@
     <!-- styles -->
     <link href="public/css/style.css" rel="stylesheet">
     <link href="public/css/utilities.css" rel="stylesheet">
+    <link href="public/css/smallscreen.css" rel="stylesheet" media="screen and (max-width: 575px)">
 </head>
 
 <body>
-    <nav class="shadow-sm bg-white">
+    <nav class="navigation shadow-sm bg-white">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center p-3">
+            <div class="d-flex justify-content-between align-items-center p-3 position-relative">
                 <div class="brand">
                     <a href="#" class="text-reset fs-4 text-uppercase">Si-Kopi</a>
                 </div>
-                <div class="d-flex align-items-center">
-                    <ul class="pages d-flex ps-0 m-0">
+                <button class="navToggler btn rounded-circle" type="button">
+                    <i class="fa-solid fa-bars navTogglerIcon"></i>    
+                    <i class="fa-solid fa-close navDismissIcon d-none"></i>    
+                </button>
+                <div class="navCollapse align-items-center" id="navCollapse">
+                    <ul class="pages d-flex align-items-center ps-0 m-0">
                         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="news.html" class="nav-link">News</a></li>
                         <li class="nav-item"><a href="agenda.html" class="nav-link">Calendar</a></li>
                         <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                        <li class="action"><a href="#" class="btn text-reset rounded-pill px-3 py-2 loginBtn shadow-sm">Login</a></li>
                     </ul>
-                    <div class="action ms-2">
-                        <a href="#" class="btn text-reset rounded-pill px-3 py-2 loginBtn shadow-">Login</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -44,7 +47,7 @@
         <div class="overlay w-100 h-100">
             <div class="container">
                 <div class="position-relative">
-                    <div class="d-flex justify-content-between align-items-center headerTitle bg-white shadow-sm rounded-pill py-3 px-5">
+                    <div class="d-flex justify-content-between align-items-center headerTitle bg-white shadow-sm rounded-pill py-3 px-4">
                         <h4>Berita</h4>
                         <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                             <ol class="breadcrumb m-0">
@@ -61,7 +64,7 @@
     <div class="news my-5">
         <div class="container pt-3">
             <div class="row">
-                <div class="col-7 latestNews position-relative">
+                <div class="col-lg-7 col-sm-12 latestNews position-relative">
                     <img src="public/uploads/slide1.jpg" alt="News">
                     <a href="#" class="link">
                     <div class="p-4 shadow-sm latestNewsCard">
@@ -84,9 +87,9 @@
                     </div>
                     </a>
                 </div>
-                <div class="col-5">
-                    <div class="d-flex flex-column">
-                        <div class="mainSideNews position-relative mb-5">
+                <div class="col-lg-5 col-sm-12">
+                    <div class="row rightSideNewsContainer">
+                        <div class="col-lg-12 col-sm-6 mainSideNews position-relative mb-5">
                             <img src="public/uploads/slide2.jpg" alt="News">
                             <a href="#" class="link">
                             <div class="p-4 shadow-sm mainNewsCard">
@@ -104,7 +107,7 @@
                             </div>
                             </a>
                         </div>
-                        <div class="mainSideNews position-relative mb-5">
+                        <div class="col-lg-12 col-sm-6 mainSideNews position-relative mb-5">
                             <img src="public/uploads/slide3.jpg" alt="News">
                             <a href="#" class="link">
                             <div class="p-4 shadow-sm mainNewsCard">
@@ -135,7 +138,7 @@
                 <span><i class="fa-solid fa-arrow-up-wide-short"></i> Urut Berdasarkan</span>
             </div>
             <div class="row">
-                <a href="#" class="col-3 link mb-4">
+                <a href="#" class="col-lg-3 col-sm-6 col-xs-12 link mb-4">
                     <div class="cardNews shadow-sm">
                         <div class="cardNewsImg">
                             <img src="public/uploads/slide1.jpg" alt="News">
@@ -153,7 +156,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="col-3 link mb-4">
+                <a href="#" class="col-lg-3 col-sm-6 col-xs-12 link mb-4">
                     <div class="cardNews shadow-sm">
                         <div class="cardNewsImg">
                             <img src="public/uploads/slide1.jpg" alt="News">
@@ -171,7 +174,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="col-3 link mb-4">
+                <a href="#" class="col-lg-3 col-sm-6 col-xs-12 link mb-4">
                     <div class="cardNews shadow-sm">
                         <div class="cardNewsImg">
                             <img src="public/uploads/slide1.jpg" alt="News">
@@ -189,7 +192,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="col-3 link mb-4">
+                <a href="#" class="col-lg-3 col-sm-6 col-xs-12 link mb-4">
                     <div class="cardNews shadow-sm">
                         <div class="cardNewsImg">
                             <img src="public/uploads/slide1.jpg" alt="News">
@@ -207,7 +210,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="col-3 link mb-4">
+                <a href="#" class="col-lg-3 col-sm-6 col-xs-12 link mb-4">
                     <div class="cardNews shadow-sm">
                         <div class="cardNewsImg">
                             <img src="public/uploads/slide1.jpg" alt="News">
@@ -225,7 +228,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="col-3 link mb-4">
+                <a href="#" class="col-lg-3 col-sm-6 col-xs-12 link mb-4">
                     <div class="cardNews shadow-sm">
                         <div class="cardNewsImg">
                             <img src="public/uploads/slide1.jpg" alt="News">
@@ -243,7 +246,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="col-3 link mb-4">
+                <a href="#" class="col-lg-3 col-sm-6 col-xs-12 link mb-4">
                     <div class="cardNews shadow-sm">
                         <div class="cardNewsImg">
                             <img src="public/uploads/slide1.jpg" alt="News">
@@ -261,7 +264,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="#" class="col-3 link mb-4">
+                <a href="#" class="col-lg-3 col-sm-6 col-xs-12 link mb-4">
                     <div class="cardNews shadow-sm">
                         <div class="cardNewsImg">
                             <img src="public/uploads/slide1.jpg" alt="News">
@@ -303,7 +306,7 @@
     <footer class="footer pt-5">
         <div class="container">
             <div class="row mb-3">
-                <div class="col-4">
+                <div class="col-lg-4 col-sm-12 mb-3">
                     <h4 class="mb-3">PROKOPIM</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam perspiciatis est? Hic voluptas accusantium quo quibusdam ea illo neque!</p>
                     <div class="logo bg-light p-3 shadow-sm">
@@ -311,7 +314,7 @@
                         <img src="public/assets/prokopim.jpeg" alt="Logo Prokopim" class="rounded">
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-lg-2 col-md-6 col-sm-12 mb-3">
                     <h5 class="mb-3 fw-bold">Tautan</h5>
                     <ul>
                         <li>
@@ -328,7 +331,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-md-6 col-sm-12 mb-3">
                     <h5 class="mb-3 fw-bold">Hubungi Kami</h5>
                     <ul>
                         <li>
@@ -347,27 +350,29 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-12 mb-3">
                     <h5 class="mb-3 fw-bold">Maps</h5>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8595.897859072187!2d121.41116705177375!3d1.167404337585161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3270ba8316591fed%3A0xfb0598f2d86b4f42!2sKantor%20Bupati%20Buol!5e0!3m2!1sid!2sid!4v1661940137371!5m2!1sid!2sid" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="d-flex justify-content-between border-top border-dark pt-3">
-                <div class="social d-flex">
+            <div class="d-flex flex-md-row flex-column justify-content-md-between justify-content-center border-top border-dark pt-3">
+                <div class="social d-flex justify-content-md-start justify-content-between">
                     <span class="me-3">Media Sosial Kami :</span>
-                    <ul class="d-flex">
+                    <ul class="d-flex mb-0">
                         <li><a href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-square-youtube"></i></a></li>
                     </ul>
                 </div>
-                <span class="copyright">Copyright 2022 <b>Prokopim</b>. All Rights Reserved</span>
+                <span class="copyright text-center">Copyright 2022 <b>Prokopim</b>. All Rights Reserved</span>
             </div>
         </div>
     </footer>
 
     <script src="public/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="public/js/script.js"></script>
 </body>
 
 </html>

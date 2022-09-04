@@ -14,31 +14,45 @@ body {
     background-color: var(--light);
 }
 
-nav a {
+.navigation a {
     text-decoration: none;
 }
 
-nav .brand {
+.navigation .brand {
     font-weight: 700;
 }
 
-nav .pages {
+.navigation .navToggler {
+    background-color: var(--primary);
+    display: none;
+}
+
+.navigation .navDismiss {
+    background-color: var(--primary);
+    display: none;
+}
+
+.navigation .pages {
     list-style-type: none;
 }
-nav .pages li {
+.navigation .pages li {
     padding: 0 .8rem;
 }
 
-nav .nav-item:hover {
+.navigation .nav-item:hover {
     color: var(--primary);
 }
 
-nav .action .loginBtn {
+.navigation .action .loginBtn {
     background-color: var(--primary);
 }
 
 .slideshow .carousel-item img {
     height: calc(100vh - 74px);
+}
+
+.slideshow .carousel {
+    z-index: -1;
 }
 
 .dataAngka .card {
@@ -217,6 +231,7 @@ nav .action .loginBtn {
 }
 
 .news .mainSideNews .mainNewsCard {
+    width: 93.8%;
     border-radius: 1rem;
     margin-top: -100px;
     position: absolute;
@@ -235,7 +250,7 @@ nav .action .loginBtn {
 }
 
 .allNews .cardNews {
-    width: 16rem;
+    /* width: 16rem; */
     background-color: #fff;
     border-radius: 1rem;
 }
@@ -335,6 +350,12 @@ nav .action .loginBtn {
 
 .agenda .agendaTable .time{
     font-weight: 500;
+    background-color: #fff;
+}
+
+.agenda .agendaTable tr td:first-child {
+    position: sticky;
+    left: 0;
 }
 
 .agendaTable .agendaTableBody .agendaPurple {
