@@ -33,3 +33,7 @@
 .news .rightSideNewsContainer{
     margin-top: 10rem;
 }
+
+.agenda .agendaBtn {
+    width: 100%;
+}

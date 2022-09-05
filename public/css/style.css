@@ -2,6 +2,7 @@
     --primary: rgb(255, 213, 2);
     --dark-primary: rgb(218, 185, 22);
     --secondary: rgb(72, 161, 77);
+    --dark-secondary: rgb(73, 146, 77);
     --light: rgb(240, 240, 240);
     --dark: #212529;
   }
@@ -14,7 +15,7 @@ body {
     background-color: var(--light);
 }
 
-.navigation a {
+a {
     text-decoration: none;
 }
 
@@ -86,8 +87,13 @@ body {
     margin-top: 120px;
 }
 
-.cardProfile .card{
-    width: 15rem;
+.cardProfile .memberLists {
+    overflow-x: hidden;
+}
+
+.cardProfile .memberItem{
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 .cardProfile img{
