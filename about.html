@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap 5 -->
     <link href="public/css/bootstrap.min.css" rel="stylesheet">
+    <!-- libraries -->
+    <link rel="stylesheet" src="public/css/zoomist.min.css"/>
     <!-- styles -->
     <link href="public/css/style.css" rel="stylesheet">
     <link href="public/css/utilities.css" rel="stylesheet">
@@ -88,6 +90,14 @@
                 <div class="row">
                     <div class="col-12 text-center">
                         <h4 class="fw-bold border-bottom pb-3 mb-3">Struktur Organigasi</h4>
+                        <!-- <img src="public/uploads/struktur-organisasi.jpg" alt="Struktur Organisasi" class="w-100 my-3"> -->
+                        <div class="w-100 overflow-hidden position-relative strukturOrganisasi">
+                            <div id="struktur-organisasi" data-zoomist-src="public/uploads/struktur-organisasi.jpg" class="pb-0 h-100"></div>
+                            <div class="custom-modules">
+                                <div class="custom-in-zoomer mb-2 btn text-reset rounded-circle shadow-sm p-3"><i class="fa-solid fa-plus"></i></div>
+                                <div class="custom-out-zoomer btn text-reset rounded-circle shadow-sm p-3"><i class="fa-solid fa-minus"></i></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -175,6 +185,7 @@
 
     <script src="public/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="public/js/zoomist.min.js"></script>
     <script src="public/js/script.js"></script>
 </body>
 

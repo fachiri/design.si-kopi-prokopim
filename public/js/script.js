@@ -33,9 +33,9 @@ $(window).on('resize', function() {
 let menuVisibleSize = menuWrapperSize;
 let itemVisible = Math.floor(menuVisibleSize / itemSize)
 
-console.log("menuVisibleSize : "+ (menuVisibleSize - 96));
-console.log("itemSize : "+itemSize);
-console.log("itemVisible : "+itemVisible);
+// console.log("menuVisibleSize : "+ (menuVisibleSize - 96));
+// console.log("itemSize : "+itemSize);
+// console.log("itemVisible : "+itemVisible);
 
 // some responsive behav for memberItem
 itemSize = (( menuVisibleSize - 96 ) / itemVisible)
@@ -74,3 +74,14 @@ $(rightPaddle).on('click', function() {
 $(leftPaddle).on('click', function() {
 	$('.memberLists').animate( { scrollLeft: getMenuPosition() - itemSize }, scrollDuration);
 });
+
+// zoomist
+new Zoomist('#struktur-organisasi', {
+    zoomer: true,
+    height: '100%',
+    zoomer: {
+      inEl: '.custom-in-zoomer',
+      outEl: '.custom-out-zoomer',
+      disableOnBounds: true
+    },
+})
