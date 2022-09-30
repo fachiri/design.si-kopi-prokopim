@@ -1,14 +1,14 @@
 :root {
     --primary: rgb(255, 213, 2);
     --dark-primary: rgb(218, 185, 22);
-    --secondary: rgb(72, 161, 77);
-    --dark-secondary: rgb(73, 146, 77);
+    --secondary: #1abc9c;
+    --dark-secondary: #16a085;
     --light: rgb(240, 240, 240);
     --dark: #212529;
-  }
+}
 
 * {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 body {
@@ -21,6 +21,10 @@ a {
 
 .navigation .brand {
     font-weight: 700;
+}
+
+.navigation .brand img {
+    height: 35px;
 }
 
 .navigation .navToggler {
@@ -37,7 +41,7 @@ a {
     list-style-type: none;
 }
 .navigation .pages li {
-    padding: 0 .8rem;
+    padding: 0 0.8rem;
 }
 
 .navigation .nav-item:hover {
@@ -63,7 +67,7 @@ a {
     position: relative;
 }
 
-.slideshow .carousel-item img{
+.slideshow .carousel-item img {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -71,31 +75,60 @@ a {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    opacity: .4;
+    opacity: 0.4;
 }
 
-.slideshow .carousel-caption {
-
-}
-
-.slideshow .carousel-caption .carousel-title a{
+.slideshow .carousel-caption .carousel-title a {
     color: #fff;
 }
 
-.slideshow .carousel-caption .carousel-title a:hover{
+.slideshow .carousel-caption .carousel-title a:hover {
     color: var(--primary);
 }
 
-.slideshow .carousel {
-    /* z-index: -1; */
+.dataAngka .cardItem {
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    border: 1px solid var(--secondary);
+    overflow: hidden;
+    /* background-color: #fff; */
+}
+
+.dataAngka .cardItem img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: ease-out .25s;
+}
+
+.dataAngka .cardItem:hover img {
+    height: 110%;
+    opacity: .3;
 }
 
 .dataAngka .card {
-    width: 15rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
     border: none;
+    border-radius: 0;
     background-color: none;
-    border: 1px solid var(--secondary);
     overflow: hidden;
+    background-color: rgba(255, 255, 255, .9);
+    transition: ease-in-out .25s;
+}
+
+.dataAngka .cardItem:hover .card {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    flex-direction: column;
+    justify-content: center;
 }
 
 .dataAngka .card .icon {
@@ -104,9 +137,25 @@ a {
     height: 5rem;
 }
 
+.dataAngka .cardItem:hover .icon {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 1rem;
+}
+
 .dataAngka .card .icon i {
     color: #fff;
     font-size: 3rem;
+}
+
+.dataAngka .cardBody {
+    margin-left: 1rem;
+}
+
+.dataAngka .cardItem:hover .cardBody {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .dataAngka .cardBody .amount {
@@ -125,12 +174,12 @@ a {
     overflow-x: hidden;
 }
 
-.cardProfile .memberItem{
+.cardProfile .memberItem {
     box-sizing: border-box;
     padding: 0 10px;
 }
 
-.cardProfile img{
+.cardProfile img {
     width: 10rem;
 }
 
@@ -148,7 +197,15 @@ a {
     border-radius: 1rem;
     margin-top: -100px;
     position: absolute;
-    width: 90%;
+    width: 96.5%;
+}
+
+.news .latestNews .latestNewsCardContent {
+    background-color: #fff;
+    border-radius: 1rem;
+    margin-top: -100px;
+    position: absolute;
+    width: 97%;
 }
 
 .news .latestNews .latestNewsCard h4 {
@@ -157,7 +214,7 @@ a {
 
 .news .latestNews .latestNewsCard small {
     font-weight: 500;
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .news .rightSideNews {
@@ -170,22 +227,22 @@ a {
     object-fit: cover;
 }
 
-.news .rightSideNews .link:hover{
+.news .rightSideNews .link:hover {
     outline: 6px solid var(--secondary);
-    transition: .2s;
+    transition: 0.2s;
 }
 
 .news .rightSideNews h5 {
     font-weight: 600;
 }
 
-.news .rightSideNews .dateTag{
-    font-size: .9rem;
+.news .rightSideNews .dateTag {
+    font-size: 0.9rem;
 }
 
 .news .rightSideNews small {
     font-weight: 500;
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .news .allNewsBtn {
@@ -225,19 +282,19 @@ a {
 }
 
 .footer ul li {
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 }
 
 .footer i {
     width: 1rem;
-    margin-right: .5rem;
+    margin-right: 0.5rem;
 }
 
 .footer a {
     text-decoration: none;
     color: var(--dark);
     font-weight: 600;
-    opacity: .7;
+    opacity: 0.7;
 }
 
 .footer a:hover {
@@ -247,12 +304,12 @@ a {
 .header {
     height: 10rem;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
 }
 
 .header .overlay {
-    background-color: rgba(0, 0, 0, .25);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .header .headerTitle {
@@ -262,7 +319,7 @@ a {
     width: 100%;
 }
 
-.header .headerTitle h4{
+.header .headerTitle h4 {
     margin: 0;
 }
 
@@ -274,20 +331,21 @@ a {
 }
 
 .news .mainSideNews .mainNewsCard {
-    width: 93.8%;
+    width: 96%;
     border-radius: 1rem;
     margin-top: -100px;
     position: absolute;
     background-color: rgb(255, 255, 255);
 }
 
-.news .mainSideNews .mainNewsCard h5{
+.news .mainSideNews .mainNewsCard h5 {
     margin: 0;
 }
 
-.news .link:hover .mainNewsCard, .news .link:hover .latestNewsCard{
+.news .link:hover .mainNewsCard,
+.news .link:hover .latestNewsCard {
     margin-top: -105px;
-    transition: .1s;
+    transition: 0.1s;
     transition-timing-function: ease-in-out;
     background-color: rgb(250, 250, 250);
 }
@@ -299,8 +357,8 @@ a {
 }
 
 .allNews .cardNews:hover {
-    margin-top: -.3rem;
-    transition: .2s;
+    margin-top: -0.3rem;
+    transition: 0.2s;
     transition-timing-function: ease-in-out;
 }
 
@@ -313,7 +371,7 @@ a {
     border-top-right-radius: 1rem;
 }
 
-.allNews .cardNews .cardNewsImg img{
+.allNews .cardNews .cardNewsImg img {
     width: 100%;
     position: absolute;
     top: 50%;
@@ -326,11 +384,11 @@ a {
 }
 
 .allNews .cardNews .cardNewsInfo {
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
-.allNews .cardNews .cardNewsInfo span i{
-    font-size: .7rem;
+.allNews .cardNews .cardNewsInfo span i {
+    font-size: 0.7rem;
 }
 
 .allNews .cardNews .cardNewsShareBtn {
@@ -339,7 +397,7 @@ a {
     background-color: var(--primary);
 }
 
-.allNews .pagination .page-item .page-link{
+.allNews .pagination .page-item .page-link {
     color: var(--dark-primary);
 }
 
@@ -347,15 +405,26 @@ a {
     border-radius: 1rem;
 }
 
+.agenda .dropdown-menu {
+    padding: 0;
+    transform: translate(-47px, 20px);
+    transition: ease-in-out .2s;
+}
+
+.agenda .dropdown-item:active {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
 .agenda .agendaTable {
     width: 100%;
 }
 
-.agenda .agendaTable tr:first-child td:nth-child(n+2) {
+.agenda .agendaTable tr:first-child td:nth-child(n + 2) {
     width: 13.3%;
 }
 
-.agenda .agendaTable tr td{
+.agenda .agendaTable tr td {
     border: 1px solid #dfdfdf;
 }
 
@@ -368,7 +437,6 @@ a {
     background-color: #ececec;
     color: var(--secondary);
     box-shadow: inset 0 0 0 3px #fff;
-
 }
 
 .agenda .agendaTable .active {
@@ -376,22 +444,22 @@ a {
     box-sizing: border-box;
 }
 
-.agenda .agendaBtn span{
+.agenda .agendaBtn span {
     background-color: var(--primary);
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
-.agenda .agendaTable .agendaTableBody tr td{
-    padding: .5rem;
+.agenda .agendaTable .agendaTableBody tr td {
+    padding: 0.5rem;
 }
 
-.agenda .agendaTable .agendaTableBody tr td:first-child{
+.agenda .agendaTable .agendaTableBody tr td:first-child {
     color: #949494;
     text-align: center;
 }
 
-.agenda .agendaTable .time{
+.agenda .agendaTable .time {
     font-weight: 500;
     background-color: #fff;
 }
@@ -402,25 +470,25 @@ a {
 }
 
 .agendaTable .agendaTableBody .agendaPurple {
-    background-color: rgba(70, 100, 255, .2);
+    background-color: rgba(70, 100, 255, 0.2);
     box-shadow: inset 0 0 0 3px #fff;
     color: rgb(70, 100, 255);
 }
 
 .agendaTable .agendaTableBody .agendaBlue {
-    background-color: rgba(62, 184, 254, .2);
+    background-color: rgba(62, 184, 254, 0.2);
     box-shadow: inset 0 0 0 3px #fff;
     color: rgb(62, 184, 254);
 }
 
 .agendaTable .agendaTableBody .agendaOrange {
-    background-color: rgba(253, 143, 41, .2);
+    background-color: rgba(253, 143, 41, 0.2);
     box-shadow: inset 0 0 0 3px #fff;
     color: rgb(253, 143, 41);
 }
 
 .agendaTable .agendaTableBody .agendaRed {
-    background-color: rgba(254, 84, 84, .2);
+    background-color: rgba(254, 84, 84, 0.2);
     box-shadow: inset 0 0 0 3px #fff;
     color: rgb(254, 84, 84);
 }
@@ -439,7 +507,8 @@ a {
     right: 10px;
 }
 
-.custom-in-zoomer, .custom-out-zoomer {
+.custom-in-zoomer,
+.custom-out-zoomer {
     width: 1.5rem;
     height: 1.5rem;
     background-color: var(--primary);
@@ -449,6 +518,7 @@ a {
     cursor: pointer;
 }
 
-.custom-in-zoomer:hover, .custom-out-zoomer:hover {
+.custom-in-zoomer:hover,
+.custom-out-zoomer:hover {
     background-color: var(--primary);
 }

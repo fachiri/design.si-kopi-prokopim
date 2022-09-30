@@ -7,13 +7,34 @@
 .navigation .navCollapse {
     display: none;
     position: absolute;
-    bottom: -7.5rem;
+    bottom: -7rem;
     left: 0;
     right: 0;
     margin: auto;
     background-color: #fff;
     padding: .8rem;
     border-radius: 1rem;
+}
+
+.navCollapse.active {
+    transform: translateY(.5rem);
+    animation: anim .3s ease-in-out;
+}
+
+@keyframes anim {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+    1% {
+      display: block;
+      opacity: 0;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(.5rem);
+    }
 }
 
 .navigation .navCollapse .pages {
@@ -27,7 +48,7 @@
 }
 
 .navigation .action .loginBtn {
-    padding: .1rem .5rem !important;
+    padding: .1rem 2rem !important;
 }
 
 .news .rightSideNewsContainer{

@@ -8,7 +8,12 @@ $(".navToggler").click(function () {
 
 // news card responsiveness
 if ($(window).width() < 975) {
-    let latestNewsCardHeight = $(".latestNewsCard").height() + 48 - 68
+    let latestNewsCardHeight
+    if(window.location.pathname == '/news') {
+        latestNewsCardHeight = $(".latestNewsCardContent").height() + 48 - 68
+    } else {
+        latestNewsCardHeight = $(".latestNewsCard").height() + 48 - 68
+    }
     $(".rightSideNewsContainer").css("margin-top", latestNewsCardHeight+"px")
 }
 
